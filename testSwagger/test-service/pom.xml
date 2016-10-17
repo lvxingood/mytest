@@ -68,12 +68,12 @@
 	</dependencies>
 	<build>
 		<resources>
-			<resource>
+			<!-- <resource>
 				<directory>src/main/resources</directory>
 				<excludes>
 					<exclude>**/config/</exclude>
 				</excludes>
-			</resource>
+			</resource> -->
 			<resource>
 				<directory>src/main/resources/config/${env.type}</directory>
 				<targetPath>${project.build.outputDirectory}/</targetPath>

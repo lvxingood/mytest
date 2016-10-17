@@ -10,7 +10,7 @@ import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomi
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication(exclude = {SessionAutoConfiguration.class, DataSourceAutoConfiguration.class, RedisAutoConfiguration.class})
-@ImportResource({"classpath:spring/application-context.xml"})
+@ImportResource({"classpath:application-context.xml"})
 public class TestApplication  implements EmbeddedServletContainerCustomizer {
 
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
 package com.lvxin.test.web.controller;
-
-import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,7 +16,7 @@ import com.wordnik.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping("/Test")
 public class TestController {
-	
+	@Autowired
 	private Test1Service testService;
 	@ApiOperation(value = "获取用户信息列表接口", notes = "获取用户信息列表")
 	@RequestMapping(value = "/getTestInfo", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
